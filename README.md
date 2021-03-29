@@ -32,5 +32,9 @@ In workspace I have created on folder Dockerfile and inside this folder I have D
 <img src="Screenshots/docker-host_playrun_1.png" >
 <img src="Screenshots/docker-host_playrun_2.png" >
 
+**After runnning dicker-host.yml this playbook have been configured inventory file for mention docker container IP**
+<img src="Screenshots/inventory.png" >
+
+
 
 
