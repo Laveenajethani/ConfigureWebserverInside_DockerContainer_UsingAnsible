@@ -1,0 +1,48 @@
+- hosts: localhost
+  tasks:
+  - name: "adding docker repo"
+    copy: 
+     src: "docker.repo"
+     dest: "/etc/yum.repos.d/docker.repo"
+
+  - name: "install docker-ce"
+    command: "yum install docker-ce --nobest -y"
+
+  - name: "start docker service"
+    service:
+     name: "docker"
+     state: started
+     enabled: yes
+
+  - name: "installing python docker library"
+    shell: "pip3 install docker"
+
+  - name: "pulling image"
+    docker_image:
+     name: laveenajethani/ssh_enable_docker_container:v1
+     source: pull
+
+  - name: "launching container "
+    docker_container:
+     name: "mycontainer"
+     state: started
+     image: "laveenajethani/ssh_enable_docker_container:v1"
+     interactive: yes
+     tty: yes
+     ports:
+     - 8880:80
+    register: x
+     
+  - name: "debugging for the docker container IP"
+    debug:
+     var: x['ansible_facts']['docker_container']['NetworkSettings']['Networks']['bridge']['IPAddress']
+  
+  - name: "making entry for docker container in inventory"
+    blockinfile:
+     path: inventory
+     block: |
+       [docker_container]
+       {{x['ansible_facts']['docker_container']['NetworkSettings']['Networks']['bridge']['IPAddress']}} ansible_ssh_user=root ansible_ssh_pass=redhat ansible_connection=ssh 
+    
+
+
