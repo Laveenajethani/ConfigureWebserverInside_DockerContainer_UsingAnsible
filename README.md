@@ -27,5 +27,10 @@ In workspace I have created on folder Dockerfile and inside this folder I have D
 
 <img src="Screenshots/docker-host_2.png" >
 
+**Let's run the playbook docker-host.yml**
+
+<img src="Screenshots/docker-host_playrun_1.png" >
+<img src="Screenshots/docker-host_playrun_2.png" >
+
 
 
