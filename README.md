@@ -6,3 +6,8 @@
 
 In workspace I have created on folder Dockerfile and inside this folder I have Dockerfile .
 
+<img src="Screenshots/file structure.PNG" >
+
+# Dockerfile 
+
+<img src="Screenshots/dockerfile.PNG" >
