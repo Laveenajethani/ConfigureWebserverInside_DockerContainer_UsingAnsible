@@ -32,9 +32,16 @@ In workspace I have created on folder Dockerfile and inside this folder I have D
 <img src="Screenshots/docker-host_playrun_1.png" >
 <img src="Screenshots/docker-host_playrun_2.png" >
 
-**After runnning dicker-host.yml this playbook have been configured inventory file for mention docker container IP**
+**After runnning dicker-host.yml this playbook has been configured inventory file for mention docker container IP**
 <img src="Screenshots/inventory.png" >
 
+**I have created docker-container.yml playbook this playbook will configure docker webserver inside docker container**
+<img src="Screenshots/docker-container.png" >
 
+**Let's run the playbook docker-container.yml**
+<img src="Screenshots/docker-container_playrun.png" >
 
+**As previously while launching the container I have mentioned in docker-host.yml file container will expose at port 8880 so let's run the website on the browser and see the output**
+<img src="Screenshots/website.PNG" >
 
+# Successfully Setup Webserver Inside Docker Container
