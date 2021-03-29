@@ -42,6 +42,7 @@ In workspace I have created on folder Dockerfile and inside this folder I have D
 <img src="Screenshots/docker-container_playrun.png" >
 
 **As previously while launching the container I have mentioned in docker-host.yml file container will expose at port 8880 so let's run the website on the browser and see the output**
+
 <img src="Screenshots/website.PNG" >
 
 # Successfully Setup Webserver Inside Docker Container
