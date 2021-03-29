@@ -19,7 +19,7 @@ In workspace I have created on folder Dockerfile and inside this folder I have D
 **I have created ansible playbook docker-host.yml . This playbook do following action:**
 - install docker 
 - Start docker service 
-- Launch container & expose the docker conatiner 
+- Pull Image & launch container & expose the docker conatiner 
 - Reterive docker container IP 
 - Inside inventory mentioning docker container IP for further webserver configuration
 
@@ -35,7 +35,7 @@ In workspace I have created on folder Dockerfile and inside this folder I have D
 **After runnning dicker-host.yml this playbook has been configured inventory file for mention docker container IP**
 <img src="Screenshots/inventory.png" >
 
-**I have created docker-container.yml playbook this playbook will configure docker webserver inside docker container**
+**I have created docker-container.yml playbook this playbook will configure webserver inside docker container**
 <img src="Screenshots/docker-container.png" >
 
 **Let's run the playbook docker-container.yml**
