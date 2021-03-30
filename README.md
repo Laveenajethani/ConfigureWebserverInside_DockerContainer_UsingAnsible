@@ -32,7 +32,7 @@ In workspace I have created on folder Dockerfile and inside this folder I have f
 <img src="Screenshots/docker-host_playrun_1.png" >
 <img src="Screenshots/docker-host_playrun_2.png" >
 
-**After runnning dicker-host.yml this playbook has been configured inventory file for mention docker container IP**
+**After running docker-host.yml this playbook has been configured inventory file for mention docker container IP**
 <img src="Screenshots/inventory.png" >
 
 **I have created docker-container.yml playbook this playbook will configure webserver inside docker container**
