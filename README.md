@@ -4,7 +4,7 @@
 
 **I have created dockerfile and from this dockerfile I will create my own customize docker image so that we can do SSH login inside the docker container.**
 
-In workspace I have created on folder Dockerfile and inside this folder I have Dockerfile .
+In workspace I have created on folder Dockerfile and inside this folder I have file named as Dockerfile .
 
 <img src="Screenshots/file structure.PNG" >
 
